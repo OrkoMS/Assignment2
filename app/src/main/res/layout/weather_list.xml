@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:weightSum="4"
+    android:layout_margin="3dp">
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/rv_day_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#333333"/>
+        <TextView
+            android:id="@+id/rv_weather_des_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#333333"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:weightSum="2">
+        <TextView
+            android:id="@+id/rv_max_temp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#333333"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/rv_min_temp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:autoSizeTextType="uniform"
+            android:textColor="#333333"/>
+
+    </LinearLayout>
+
+</LinearLayout>
