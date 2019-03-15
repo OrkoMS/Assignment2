@@ -1,6 +1,5 @@
 package com.roar71.assignment2;
 
-import android.annotation.SuppressLint;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
@@ -25,13 +24,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         TextView toolbarTextView =findViewById(R.id.toolbar_text);
-
         Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/srisakdi_bold.ttf");
-
         toolbarTextView.setTypeface(custom_font);
-
         if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.LOLLIPOP) {
             toolbar.setElevation(10f);
         }
@@ -62,7 +60,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    @SuppressLint("StaticFieldLeak")
     private class AsyncThread extends AsyncTask{
 
         @Override
